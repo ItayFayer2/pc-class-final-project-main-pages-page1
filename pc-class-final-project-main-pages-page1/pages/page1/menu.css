@@ -1,7 +1,8 @@
 body {
     padding: 0;
     margin: 0;
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+font-family: 'Arial', sans-serif;  
+font-weight: bold;  
 background-color: white;
 }
 
@@ -30,6 +31,7 @@ header img {
 .nav-links li a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
     transition: 0.2s ease;
 }
 
@@ -145,6 +147,7 @@ header img {
 .Menu {
     display: flex;
     padding: 30px 30px;
+    gap: 20px;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -155,17 +158,16 @@ header img {
     padding: 10px;
     border-radius: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 300px;
+    width: 340px;
     display: inline-flex; 
+    margin: 5px;
     flex-direction: column;
     align-items: center;
 }
 
 .Menu .Item img {
-    width: 300px;
-    border-radius: 10px;
+    width: 340px;
     height: 290px;
-    object-fit: cover;
 }
 .Menu .Item h2 {
     margin: 10px 0;
@@ -178,6 +180,7 @@ header img {
     margin: 0;
 }
 .Menu button {
+    transition: all 0.2s ease;
     margin-top: 15px;
     padding: 10px 43%;
     font-size: 16px;
@@ -186,4 +189,10 @@ header img {
     border: none;
     border-radius: 6px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Menu button:hover {
+    transition: all 0.2s ease;
+    cursor: pointer;
+    transform: scale(1.03);
 }
